@@ -82,3 +82,32 @@ cd sustainability-e-commerece-webiste-with-AI-integration
 Ganji Manogna
 
 **Mini Project for Academic Evaluation** 
+
+---
+
+## AI-Powered Resell/Redesign Feature
+
+This project includes an AI-powered resell/redesign page that allows users to upload a product image and describe how they want it redesigned. The app uses Stable Diffusion with ControlNet (Canny) to generate a new, detailed version of the product while preserving its shape.
+
+**How it works:**
+- Canny edge detection extracts the product's shape.
+- Stable Diffusion with ControlNet generates a new image based on your prompt and the original shape.
+- The redesigned image is displayed instantly in a Gradio web interface.
+
+**How to Run:**
+1. Set your Hugging Face token as an environment variable:
+   - On Windows CMD:
+     ```cmd
+     set HF_TOKEN=your_huggingface_token_here
+     ```
+2. Install dependencies:
+   ```sh
+   pip install gradio diffusers transformers accelerate opencv-python pillow numpy huggingface_hub
+   ```
+3. Run the redesign app:
+   ```sh
+   python my-app/backend-python/redesign_app.py
+   ```
+4. Open the Gradio link shown in your terminal (e.g., http://127.0.0.1:7860 or the public share link).
+
+**Note:** Requires a CUDA-enabled GPU and a valid Hugging Face account for model access. 
