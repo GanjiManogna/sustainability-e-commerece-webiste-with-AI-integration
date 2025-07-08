@@ -1,0 +1,246 @@
+/* Container for the About page */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+/* Heading for the About page */
+.about-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Description under the About heading */
+.about-description {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Why Choose EcoVive Section */
+.why-choose-ecovive {
+  margin-top: 40px;
+}
+
+.why-choose-ecovive h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #28a745; /* Green color */
+  margin-bottom: 20px;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px;
+}
+
+.reason {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Make the section responsive */
+@media (max-width: 768px) {
+  .reasons {
+      grid-template-columns: 1fr; /* Stack items in a single column on small screens */
+  }
+}
+
+.about-page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 40px; /* Add padding bottom */
+  color: var(--dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--primary-light); /* Light green background */
+  color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.about-intro-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.about-mission {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.about-mission h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.about-mission p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+  color: var(--dark);
+}
+
+/* Why Choose Section */
+.about-why-choose {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-why-choose h2 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.why-choose-intro {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-choose-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.why-choose-card {
+  background-color: var(--light-gray);
+  padding: 25px;
+  border-radius: 6px;
+  border-left: 5px solid var(--secondary); /* Orange accent border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.why-choose-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.why-choose-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+/* Call to Action Section */
+.about-cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.about-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-light);
+}
+
+.about-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* Optional Button Styles */
+/* .cta-button {
+    padding: 12px 25px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-dark);
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+  .why-choose-cards {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+  }
+}

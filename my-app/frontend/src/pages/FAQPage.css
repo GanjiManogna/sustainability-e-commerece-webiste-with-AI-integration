@@ -1,0 +1,68 @@
+/* src/pages/FAQPage.css */
+.faq-page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: var(--dark);
+}
+
+.faq-page-container h1 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: var(--white); /* Keep default white or light grey */
+  border-left: 5px solid transparent; /* Start with transparent border */
+  transition: background-color 0.5s ease-in-out, border-left-color 0.5s ease-in-out; /* Transition for highlight */
+}
+
+/* Highlight style */
+.faq-item.highlighted {
+  background-color: #f0f9ff; /* Lighter blue highlight */
+  border-left-color: var(--primary); /* Use primary color for border */
+}
+
+.faq-question {
+  font-size: 1.3rem; /* Slightly smaller question */
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--dark);
+  margin: 0; /* Remove default margins */
+  padding-left: 5px; /* Adjust padding if needed */
+}
+
+.faq-more-questions {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--gray);
+}
+.faq-more-questions a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.faq-more-questions a:hover {
+    text-decoration: underline;
+} 

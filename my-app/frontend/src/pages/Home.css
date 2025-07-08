@@ -1,0 +1,252 @@
+/* src/pages/Home.css */
+
+.home {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Category Section */
+  .category-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .category-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Card container */
+  .category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Optional animation */
+  .category-cards > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-cards > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles specifically for the "All Products" card in the category list */
+  .all-products-card {
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    /* Other styles for this specific card can remain if needed */
+  }
+  
+  /* Style for the Show More/Less button */
+  .toggle-categories-btn {
+    display: block; /* Center it */
+    margin: 25px auto 0; /* Spacing above the button */
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    background-color: transparent;
+    border: 2px solid var(--primary-light);
+    border-radius: 25px; /* Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-categories-btn:hover {
+    background-color: var(--primary-light);
+    color: white;
+    border-color: var(--primary-light);
+  }
+  
+  /* Products Section */
+  .products-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .products-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Ensures the link takes up the card space */
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make cards in a row the same height */
+    position: relative; /* Needed for absolute positioning of wishlist button */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Wishlist Button Styles */
+  .wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.4rem; /* Adjust icon size */
+    color: var(--gray); /* Default empty heart color */
+    padding: 0;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    z-index: 2; /* Ensure it's above the image */
+  }
+  
+  .wishlist-btn:hover {
+    background: rgba(255, 255, 255, 1); /* Opaque background on hover */
+    color: var(--primary-dark); 
+  }
+  
+  .wishlist-btn.active {
+    color: var(--primary); /* Filled heart color (red or primary) */
+  }
+  
+  .wishlist-btn.active:hover {
+    color: var(--primary-dark);
+  }
+  
+  .product-image {
+    height: 220px; /* Fixed height for image container */
+    overflow: hidden;
+    background-color: #f0f0f0; /* Placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area */
+  }
+  
+  .no-image {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  .product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows info section to fill remaining space */
+  }
+  
+  .product-info h3 {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Prevent long titles from breaking layout */
+  }
+  
+  .category-tag {
+    font-size: 0.85rem;
+    color: var(--gray-dark);
+    background-color: #f5f5f5;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Prevent tag from stretching */
+    text-transform: capitalize;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+  
+  .condition {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 15px;
+    flex-grow: 1; /* Push button to the bottom */
+  }
+  
+  .add-to-cart-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+    margin-top: auto; /* Align to bottom */
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .no-products {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .products-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    
+    .product-image {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

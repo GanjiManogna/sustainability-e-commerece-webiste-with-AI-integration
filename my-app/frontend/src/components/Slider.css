@@ -1,0 +1,99 @@
+/* Slider container */
+.slider {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    background-color: #62ef9b;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Dark overlay for readability */
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Slide content centered */
+  .slide-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Number circle */
+  .step-circle {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Title and description */
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Navigation buttons */
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Hover effect */
+  .slider:hover .slide-content {
+    transform: translateY(-5px);
+  }
+  

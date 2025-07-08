@@ -1,0 +1,222 @@
+/* Container for the sell page */
+.sell-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--white); /* Use white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    margin-top: 60px; /* Add some spacing from the top for better visual balance */
+}
+
+/* Heading for the sell page */
+.sell-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark); /* Use dark text */
+}
+
+/* Form controls */
+.sell-container .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.sell-container .btn-primary {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: var(--primary); /* Use theme primary */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+.sell-container .btn-primary:hover {
+    background-color: var(--primary-dark); /* Use theme dark primary */
+}
+
+.sell-container .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5); /* Focus outline with theme primary color (adjust alpha) */
+}
+
+/* File input styling */
+.sell-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Image preview section */
+.sell-container .image-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sell-container .image-preview img {
+    max-width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Space between form groups */
+.sell-container .form-group {
+    margin-bottom: 20px; /* Increased space between sections */
+}
+
+/* Optional: Make the container responsive */
+@media (max-width: 768px) {
+    .sell-container {
+        padding: 15px;
+        margin-top: 30px; /* Reduced margin on small screens */
+    }
+
+    .sell-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .sell-container .btn-primary {
+        width: 100%; /* Make the button full-width on smaller screens */
+    }
+}
+
+/* Match Redesign container style */
+.sell-page-container {
+  max-width: 700px; 
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: var(--white); 
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--dark);
+}
+
+/* Match Redesign heading style */
+.sell-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 30px; 
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.sell-subheading { /* Optional subheading */
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.sell-form {
+  /* No specific form styles needed if inputs are styled directly */
+}
+
+/* Match Redesign form element styles */
+.sell-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sell-form input[type="text"],
+.sell-form input[type="number"],
+.sell-form select,
+.sell-form textarea,
+.sell-form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px; /* Space below each input */
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sell-form input[type="text"]:focus,
+.sell-form input[type="number"]:focus,
+.sell-form select:focus,
+.sell-form textarea:focus,
+.sell-form input[type="file"]:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+.sell-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.sell-form .upload-label { /* If you use a specific label for upload */
+  margin-top: 10px; 
+}
+
+/* Image preview section */
+.sell-image-container {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.sell-image-container img {
+  max-width: 200px; 
+  max-height: 200px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Submit button styling */
+.sell-form button[type="submit"] {
+  display: block; 
+  width: 100%; 
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: var(--primary); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.sell-form button[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Error/Status message styling (copy from Redesign if needed) */
+.status-message { 
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sell-page-container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+  .sell-heading {
+    font-size: 1.8rem;
+  }
+}

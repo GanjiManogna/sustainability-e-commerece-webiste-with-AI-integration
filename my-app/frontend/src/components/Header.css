@@ -1,0 +1,116 @@
+/* src/components/Header.css */
+
+/* General header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .logo img {
+    width: 150px; /* Adjust based on logo size */
+    height: auto;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Navbar links styling */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: var(--primary); /* Adjust based on your primary color */
+  }
+  
+  .navbar ul li a.active {
+    color: var(--primary); /* Highlight active link with primary color */
+  }
+  
+  /* Hamburger menu for mobile */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+    transition: 0.4s;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    /* Show hamburger icon in mobile */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Hide menu by default on mobile */
+    .navbar ul {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    /* Display menu when active */
+    .navbar.active {
+      display: flex;
+    }
+  
+    /* Hamburger to X transformation when active */
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: 8px;
+    }
+  
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(45deg);
+      position: relative;
+      top: -8px;
+    }
+  }
+  

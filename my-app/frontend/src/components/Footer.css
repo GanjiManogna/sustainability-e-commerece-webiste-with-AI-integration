@@ -1,0 +1,88 @@
+/* Footer container styling */
+.footer-container {
+  background-color: #000; /* Set background to black */
+  color: white; /* Set text color to white */
+  padding: 40px 0;
+  border-top: 2px solid #28a745; /* Optional: Green top border */
+}
+
+/* Footer section layout horizontally */
+.footer-row {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the columns */
+  margin-bottom: 20px;
+}
+
+/* Footer columns styling */
+.footer-col {
+  flex: 1; /* Ensure columns take equal space */
+  padding: 0 20px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Footer heading */
+.footer-col h5 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Footer paragraph */
+.footer-col p {
+  font-size: 1rem;
+  color: #ccc; /* Lighter text for paragraph */
+}
+
+/* Footer links styling */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: white; /* Set link text color to white */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  border-top: 1px solid #444; /* Dark border on the bottom */
+  padding-top: 20px;
+}
+
+/* Footer copyright */
+.footer-bottom p {
+  font-size: 1rem;
+  color: #ccc; /* Lighter color for copyright text */
+}
+
+/* Optional: Make the footer responsive */
+@media (max-width: 768px) {
+  .footer-row {
+      flex-direction: column; /* Stack footer sections vertically on small screens */
+      align-items: center;
+  }
+
+  .footer-col {
+      margin-bottom: 20px;
+      text-align: center; /* Center text on small screens */
+  }
+
+  .footer-col h5 {
+      font-size: 1.1rem;
+  }
+
+  .footer-col ul li {
+      margin-bottom: 8px;
+  }
+}

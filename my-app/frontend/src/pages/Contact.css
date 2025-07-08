@@ -1,0 +1,80 @@
+/* Container for the contact page */
+.contact-container {
+  max-width: 600px; /* Match Sell container width */
+  margin: 60px auto; /* Match Sell margin */
+  padding: 30px; /* Use padding */
+  background-color: var(--white); /* Use white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Use shadow */
+}
+
+/* Heading for the contact page */
+.contact-heading { /* Target heading directly */
+  text-align: center;
+  font-size: 2rem; /* Match Sell heading size */
+  color: var(--dark); /* Use dark text */
+  margin-bottom: 10px;
+}
+
+.contact-subheading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+/* Form controls */
+.contact-container .form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-container .form-label {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* Button Styling */
+.contact-submit-btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  background-color: var(--primary); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* REMOVE styles for .contact-form-section and .contact-faq-section */
+/* 
+.contact-form-section { ... }
+.contact-faq-section { ... }
+.contact-faq-section .faq-heading { ... }
+.faq-link-list { ... }
+.faq-link-list li { ... }
+.faq-link-list a { ... }
+.faq-link-list a:hover { ... }
+.view-all-faq-link { ... }
+.view-all-faq-link:hover { ... }
+*/
+
+
+/* Responsive adjustments for Contact Page */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+  /* Removed FAQ responsive */
+}
