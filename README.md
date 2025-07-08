@@ -1,3 +1,5 @@
+![Screenshot 2025-07-08 131138](https://github.com/user-attachments/assets/d8e8d573-b3e4-49df-b094-20fef4cdc4d9)
+
 # Sustainability E-Commerce Website with AI Integration
 
 This repository contains the code for my mini project as a student, focused on building a sustainable e-commerce platform enhanced with AI features. The project demonstrates my learning in full-stack web development, backend integration, and basic AI/ML service usage.
@@ -77,11 +79,18 @@ cd sustainability-e-commerece-webiste-with-AI-integration
 - [MongoDB](https://www.mongodb.com/), [React](https://reactjs.org/), [Node.js](https://nodejs.org/), [Django](https://www.djangoproject.com/)
 
 ---
+![Screenshot 2025-07-08 131315](https://github.com/user-attachments/assets/bdddef53-b122-472b-ab96-40d2bf3787d1)
+![Screenshot 2025-07-08 131240](https://github.com/user-attachments/assets/fe7541bc-996f-454b-bdea-9b8fbea20eba)
+![Screenshot 2025-07-08 131203](https://github.com/user-attachments/assets/0948b768-69f4-429a-920d-032ea57bf539)
+![Screenshot 2025-07-08 131330](https://github.com/user-attachments/assets/7b0d9ef8-d6a4-49a2-9356-c6968b48a2cc)
+![Screenshot 2025-07-08 131940](https://github.com/user-attachments/assets/7ff54308-7f8c-4ea4-9857-dd456a1905cf)
+![Screenshot 2025-07-08 131932](https://github.com/user-attachments/assets/67f5be9e-0ba7-4750-b71d-136c3d48fb11)
 
 **Submitted by:**
 Ganji Manogna
 
 **Mini Project for Academic Evaluation** 
+<<<<<<< HEAD
 
 ---
 
@@ -111,3 +120,5 @@ This project includes an AI-powered resell/redesign page that allows users to up
 4. Open the Gradio link shown in your terminal (e.g., http://127.0.0.1:7860 or the public share link).
 
 **Note:** Requires a CUDA-enabled GPU and a valid Hugging Face account for model access. 
+=======
+>>>>>>> dee65a45d1ad1193e9e4f7076003efbcc755058d
